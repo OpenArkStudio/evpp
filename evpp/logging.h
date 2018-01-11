@@ -36,13 +36,13 @@
 #define LOG_FATAL LOG(FATAL)
 
 #else
-#define LOG_TRACE std::cout << __FILE__ << ":" << __LINE__ << " "
-#define LOG_DEBUG std::cout << __FILE__ << ":" << __LINE__ << " "
-#define LOG_INFO  std::cout << __FILE__ << ":" << __LINE__ << " "
-#define LOG_WARN  std::cout << __FILE__ << ":" << __LINE__ << " "
-#define LOG_ERROR std::cout << __FILE__ << ":" << __LINE__ << " "
-#define LOG_FATAL std::cout << __FILE__ << ":" << __LINE__ << " "
-#define CHECK_NOTnullptr(val) LOG_ERROR << "'" #val "' Must be non nullptr";
+#define LOG_TRACE //std::cout << __FILE__ << ":" << __LINE__ << " "
+#define LOG_DEBUG //std::cout << __FILE__ << ":" << __LINE__ << " "
+#define LOG_INFO  //std::cout << __FILE__ << ":" << __LINE__ << " "
+#define LOG_WARN  //std::cout << __FILE__ << ":" << __LINE__ << " "
+#define LOG_ERROR //std::cout << __FILE__ << ":" << __LINE__ << " "
+#define LOG_FATAL //std::cout << __FILE__ << ":" << __LINE__ << " "
+#define CHECK_NOTnullptr(val) //LOG_ERROR << "'" #val "' Must be non nullptr";
 #ifdef _DEBUG
 #define DLOG_TRACE LOG_TRACE
 #define DLOG_WARN LOG_WARN
