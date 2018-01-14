@@ -72,7 +72,7 @@ void TCPClient::DisconnectInLoop() {
         conn_->Close();
     } else {
         // When connector_ is connecting to the remote server ...
-        assert(connector_ && !connector_->IsConnected());
+        //assert(connector_ && !connector_->IsConnected());
     }
 
     if (connector_->IsConnected() || connector_->IsDisconnected()) {
